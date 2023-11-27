@@ -6,13 +6,15 @@ import { LandingComponent } from './components/landing/landing.component';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

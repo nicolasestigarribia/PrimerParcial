@@ -61,5 +61,14 @@
       "stock": "275"
     }
   ],
-  "users":[]
+  "users":[
+    {
+      "id": "1",
+      "name": "Nicolas",
+      "lastname": "Estigarribia",
+      "mail": "admin@admin.com",
+      "password":"admin",
+      "birthdate":"28/04/1997"
+    }
+  ]
 }
