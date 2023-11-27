@@ -25,11 +25,11 @@ export class ApiService {
 
    public editProduct(id:number , producto : Product) : Observable<boolean>
    {
-    return this.http.put<boolean>(`${this.baseURL}/productos`,producto);
+    return this.http.put<boolean>(`${this.baseURL}/productos/${id}`,producto);
    }
 
    public deleteProduct(id:number) : Observable<boolean>{
-    return this.http.delete<boolean>(`${this.baseURL}/productos`).pipe(
+    return this.http.delete<boolean>(`${this.baseURL}/productos/${id}`).pipe(
       map(resp => true),
       catchError(error => of(false))
       );

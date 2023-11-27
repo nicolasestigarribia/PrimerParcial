@@ -7,14 +7,20 @@ import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './components/home/home.component'
+import { AddProductComponent } from './components/product/add-product/add-product.component';
+import { ViewProductComponent } from './components/product/view-product/view-product.component'
+import { HomeComponent } from './components/product/home/home.component';
+import { EditProductComponent } from './components/product/edit-product/edit-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    AddProductComponent,
+    ViewProductComponent,
+    EditProductComponent
   ],
   imports: [
     BrowserModule,

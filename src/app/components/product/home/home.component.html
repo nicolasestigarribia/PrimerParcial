@@ -1,0 +1,8 @@
+<div class="row w-100">
+    <div class="col-lg-6">
+        <app-view-product [listProduct]="lista" (deleteProduct)="deleteProduct($event)" (editProduct)="editProduct($event)"></app-view-product>
+    </div>
+    <div class="col-lg-6">
+        <app-add-product (createProduct)="addProduct($event)" ></app-add-product>
+    </div>
+</div>
